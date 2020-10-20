@@ -1,0 +1,31 @@
+# command prompt
+autoload -U colors && colors
+PS1="%{$fg[red]%}%n %{$fg[cyan]%}%~ 
+%{$fg[green]%}==> %{$reset_color%}"
+precmd() {
+  LEFT="The time is"
+  RIGHT="$(date) "
+  RIGHTWIDTH=$(($COLUMNS-${#LEFT}))
+  print $fg[yellow]$LEFT${(l:$RIGHTWIDTH::.:)RIGHT}
+}
+
+# changing ls color
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxahedabagacad
+alias ls='ls -G'
+
+# zsh autojump
+[[ -s /Users/abdallamoustafa/.autojump/etc/profile.d/autojump.sh ]] && source /Users/abdallamoustafa/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
+# zsh auto-suggestions
+source ~/zsh-lib/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# TAB navigation
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+
+# zsh highlighting
+source /Users/abdallamoustafa/zsh-lib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ./zsh-lib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
