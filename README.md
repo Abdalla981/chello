@@ -12,7 +12,8 @@
 
 ## How to use:
 
-- clone this git repo to your machine (https://github.com/Abdalla981/zsh_theme.git)
-- copy the content in the zshrc_backup.txt into your .zshrc
+1. clone this git repo to your machine (https://github.com/Abdalla981/zsh_theme.git)
+2. copy the content in the zshrc_backup.txt into your .zshrc
   - Note: if you do not have a .zshrc file then create it
-- make sure the zsh-lib folder is in your root directory
+3. install the dependencies manulaly and add their folder inside zsh-lib
+4. make sure the zsh-lib folder is in your root directory
