@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Schreenshot of the terminal's appearance](/Users/abdallamoustafa/zsh_theme/Terminal.gif)
+![Schreenshot of the terminal's appearance](https://media.giphy.com/media/Cf1b6M9jZ0QlCDQhNv/giphy.gif)
 
 ## Dependencies
 
